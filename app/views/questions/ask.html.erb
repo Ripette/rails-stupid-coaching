@@ -1,0 +1,11 @@
+
+<h1>Ask your question</h1>
+
+<%= form_with url: "/answer", method: :get, local: true do %>
+  <div class="mb-3">
+    <label for="question" class="form-label">Your question</label>
+    <input type="text" class="form-control" name="question" id="question" placeholder="Type your question...">
+  </div>
+
+  <%= submit_tag "Ask!", class: "btn btn-primary" %>
+<% end %>
